@@ -1,4 +1,3 @@
-const variable = "hello";
-let object1 = {};
-object1[variable] = 1;
-console.log(object1);
+for (let i = 0, j = 1; i < 8 && j < 8; i++, j++) {
+  console.log(i,j);
+}
