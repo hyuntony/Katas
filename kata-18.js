@@ -11,11 +11,11 @@ const squareCode = function(message) {
   }
   let rowArrays = messageRows.split("\n");  // separate rows into array
   for (let i = 0; i < squareRoot; i++) {    // creating final code
-    if (i === 0) {} else {
+    if (!i === 0) {
       finalCode += " ";
     }
     for (let x = 0; x < rowArrays.length; x++) {
-      if (rowArrays[x][i] == undefined) {} else {
+      if (!rowArrays[x][i] === undefined) {
         finalCode += rowArrays[x][i];
       }
     }
